@@ -1677,7 +1677,7 @@ MonoBehaviour:
   - {fileID: 1319689941}
   - {fileID: 1699696684}
   - {fileID: 537737455}
-  questionIndex: 10
+  questionIndex: 0
   QuizPanel: {fileID: 1973675187}
   GOPanel: {fileID: 2065423649}
   questionTxt: {fileID: 440476588}
