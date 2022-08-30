@@ -4,18 +4,16 @@ using UnityEngine;
 
 public class QuestionChecker : MonoBehaviour
 {
-    public bool isCorrect = false;
+    public bool isCorrect = true;
     public QuizManager quizmg;
     public void QuestionCheck()
     {
         if (isCorrect)
-        {
-            Debug.Log("Correct");
+        {            
             quizmg.correct();
         }
         else
-        {
-            Debug.Log("Wrong");
+        {            
             quizmg.wrong();
         }
     }

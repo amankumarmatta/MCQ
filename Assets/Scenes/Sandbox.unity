@@ -1602,19 +1602,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuesAndAns:
-  - Question: Color of the sky?
+  - Question: In which movie did Tamanna act with hero ram?
     Answers:
-    - Red
-    - Green
-    - Blue
-    - Yellow
-    CorrectAns: 0
+    - ' Ready'
+    - ' Ganesh'
+    - Happy days
+    - Deva das
+    CorrectAns: 1
+  - Question: What was the first movie of megastar Chiranjeevi?
+    Answers:
+    - ' Mana oori pandavulu'
+    - ' Donga'
+    - Yamakinkarudu
+    - ' Punaadi raalu'
+    CorrectAns: 4
+  - Question: Tarun and Trisha movie.
+    Answers:
+    - ' Stalin'
+    - ' Nuvu leka nenu lenu'
+    - ' Nee manasu naaku telusu'
+    - ' Nuve kavali'
+    CorrectAns: 3
+  - Question: 'Sr NTR first movie:'
+    Answers:
+    - Mana desam
+    - Yama gola
+    - Mejar chandrakanth
+    - Ponthulama
+    CorrectAns: 1
+  - Question: In which film did Trisha start her career?
+    Answers:
+    - Nee manasu naaku telusu
+    - Jodi
+    - ' Varsham'
+    - Pourname
+    CorrectAns: 2
+  - Question: Who is the music director for the Movie Missamma (Bhoomika's)?
+    Answers:
+    - Keeravani
+    - Manisharma
+    - R.P. Patnaik
+    - Vandemataram Srinivas
+    CorrectAns: 4
+  - Question: Who is the hero that played Venkatesh's brother role in the movie Sankranthi?
+    Answers:
+    - ' Raviteja'
+    - Srikanth
+    - Yoganand
+    - None of the above
+    CorrectAns: 2
+  - Question: Who is the director of the movie Jalsa?
+    Answers:
+    - Srinu Vaitla
+    - Trivikram
+    - V.V. Vinayak
+    - Bhaskar
+    CorrectAns: 2
+  - Question: When was Mahesh Babu born?
+    Answers:
+    - 2 February, 1980
+    - 9 August, 1975
+    - 10 March, 1973
+    - 1 July, 1956
+    CorrectAns: 2
+  - Question: What was the name of the debut movie of Mahesh Babu?
+    Answers:
+    - Rajakumarudu
+    - Businessman
+    - Needa
+    - Maharshi
+    CorrectAns: 1
   options:
   - {fileID: 1199851258}
   - {fileID: 1319689941}
   - {fileID: 1699696684}
   - {fileID: 537737455}
-  questionIndex: 0
+  questionIndex: 10
   QuizPanel: {fileID: 1973675187}
   GOPanel: {fileID: 2065423649}
   questionTxt: {fileID: 440476588}
@@ -1873,7 +1936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2065423650
 RectTransform:
   m_ObjectHideFlags: 0

@@ -71,7 +71,6 @@ public class QuizManager : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<QuestionChecker>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QuesAndAns[questionIndex].Answers[i];
             if (QuesAndAns[questionIndex].CorrectAns == i+1)
             {
