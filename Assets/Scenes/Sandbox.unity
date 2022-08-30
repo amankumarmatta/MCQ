@@ -1602,13 +1602,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   QuesAndAns:
-  - Question: In which movie did Tamanna act with hero ram?
+  - Question: Color of the sky
     Answers:
-    - ' Ready'
-    - ' Ganesh'
-    - Happy days
-    - Deva das
-    CorrectAns: 1
+    - Red
+    - Green
+    - Blue
+    - Yellow
+    CorrectAns: 3
   - Question: What was the first movie of megastar Chiranjeevi?
     Answers:
     - ' Mana oori pandavulu'
@@ -1936,7 +1936,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2065423650
 RectTransform:
   m_ObjectHideFlags: 0
