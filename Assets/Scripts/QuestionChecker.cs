@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class QuestionChecker : MonoBehaviour
 {
-    public bool isCorrect = true;
+    public bool isCorrect = false;
     public QuizManager quizmg;
     public void QuestionCheck()
     {
