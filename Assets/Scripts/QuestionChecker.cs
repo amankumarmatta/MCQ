@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Answer : MonoBehaviour
+public class QuestionChecker : MonoBehaviour
 {
     public bool isCorrect = false;
     public QuizManager quizmg;
-    public void Answers()
+    public void QuestionCheck()
     {
         if (isCorrect)
         {
             Debug.Log("Correct");
-            quizmg.Correct();
+            quizmg.correct();
         }
         else
         {
             Debug.Log("Wrong");
-            quizmg.Correct();
+            quizmg.wrong();
         }
     }
 }
