@@ -21,9 +21,13 @@ public class QuizManager : MonoBehaviour
 
     private void Start()
     {
+
         totalQuestions = QuesAndAns.Count;
         GOPanel.SetActive(false);
-        DisplayQuestions();
+        foreach(GameObject obj in options)
+        {
+            StartCoroutine(DisplayQuestions(obj.GetComponent<Image>()));
+        }
     }
 
     void GameOver()
@@ -38,21 +42,27 @@ public class QuizManager : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void correct()
+    public void correct(Image img)
     {
+        img.color = Color.green;
         scoreCount++;
         QuesAndAns.RemoveAt(questionIndex);
-        DisplayQuestions();
+        StartCoroutine(DisplayQuestions(img));
     }
 
-    public void wrong()
+    public void wrong(Image img)
     {
+        img.color = Color.red;
         QuesAndAns.RemoveAt(questionIndex);
-        DisplayQuestions();
+        StartCoroutine(DisplayQuestions(img));
     }
 
-    public void DisplayQuestions()
+    public IEnumerator DisplayQuestions(Image img)
     {
+        yield return new WaitForSeconds(1);
+        img.color = Color.white;
+
+
         if (QuesAndAns.Count > 0)
         {
             questionIndex = Random.Range(0, QuesAndAns.Count);
@@ -72,7 +82,7 @@ public class QuizManager : MonoBehaviour
         {
             options[i].GetComponent<QuestionChecker>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = QuesAndAns[questionIndex].Answers[i];
-            if (QuesAndAns[questionIndex].CorrectAns == i+1)
+            if (QuesAndAns[questionIndex].CorrectAns == i + 1)
             {
                 options[i].GetComponent<QuestionChecker>().isCorrect = true;
             }

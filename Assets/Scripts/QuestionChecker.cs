@@ -10,13 +10,15 @@ public class QuestionChecker : MonoBehaviour
     public void QuestionCheck()
     {
         if (isCorrect)
-        {             
-            quizmg.correct();
+        {
+            Image img = GetComponent<Image>();
+            quizmg.correct(img);
             Debug.Log("Correct");
         }
         else
-        {            
-            quizmg.wrong();
+        {
+            Image img = GetComponent<Image>();
+            quizmg.wrong(img);
         }
     }
 }
